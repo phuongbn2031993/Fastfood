@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FastFood_PRM391</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_catagory">Danh mục</string>
+    <string name="title_cart">Giỏ hàng</string>
+    <string name="title_account">Tài khoản</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

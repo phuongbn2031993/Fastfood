@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_layout"
+    tools:context=".view.fragment.fragment_dangki">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_dangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký tài khoản"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_dangnhap"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_hoten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Họ tên đầy đủ"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_hoten"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_diachi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_diachi"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_sdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số điện thoại"
+                    android:inputType="number"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_sdt"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ email"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_makhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_email"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_matkhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_xacnhanmk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_makhau"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_xacnhanmk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập lại mật khẩu"
+                    android:inputType="textPassword"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cb_dieukhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_xacnhanmk"
+                android:layout_marginTop="16dp"
+                android:text="Tôi đã đọc và hiểu rõ các điều khoản và chính sách bảo mật của FastFood" />
+
+            <TextView
+                android:id="@+id/btn_dangnky"
+                android:layout_below="@+id/cb_dieukhoan"
+                android:layout_marginTop="16dp"
+                android:text="ĐĂNG KÝ"
+                style="@style/btn"/>
+
+
+            <TextView
+                android:id="@+id/tv_hoac"
+                android:layout_below="@+id/btn_dangnky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Hoặc"
+                android:textColor="@color/color_chu_xanh" />
+
+            <LinearLayout
+                android:id="@+id/ll_loginfb"
+                android:layout_below="@+id/tv_hoac"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDark">
+                <ImageView
+                    android:src="@drawable/ic_facebook"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:text="Continue with Facebook"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_trang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_signin"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ll_loginfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"></com.google.android.gms.common.SignInButton>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

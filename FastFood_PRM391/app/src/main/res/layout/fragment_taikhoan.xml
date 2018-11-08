@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_taikhoan"
+    tools:context=".view.fragment.fragment_taikhoan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_nen"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FastFood_PRM391"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_trang"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_chaomung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_trang"
+                    android:maxLines="1"
+                    android:text="Xin chào, chào mừng bạn..." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dangnhap_dangky"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/brg_btn"
+                android:padding="5dp"
+                android:text="Đăng nhập / Đăng ký"
+                android:textStyle="bold"
+                android:textColor="@color/color_trang" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_chucnang"
+            android:background="@color/color_trang"
+            android:layout_below="@+id/ll_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <ListView
+            android:id="@+id/lv_caidat"
+            android:background="@color/color_trang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_chucnang"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</FrameLayout>

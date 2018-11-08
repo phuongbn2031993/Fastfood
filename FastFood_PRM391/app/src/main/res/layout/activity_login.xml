@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.activity_login">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_toolbar"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/btn_thoat"
+            android:src="@drawable/ic_thoat"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+        <TextView
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_trang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_toolbar"
+        app:tabSelectedTextColor="@color/color_do_hong"
+        app:tabIndicatorColor="@color/color_do_hong"
+        app:tabIndicatorHeight="2dp">
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_view_pager"
+        android:layout_marginTop="55dp"
+        android:layout_below="@id/tb_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>

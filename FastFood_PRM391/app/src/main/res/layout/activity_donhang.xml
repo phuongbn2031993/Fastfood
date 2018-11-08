@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.activity_taikhoan.activity_donhang">
+
+    <RelativeLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_toolbar">
+
+        <ImageView
+            android:id="@+id/btn_thoat"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_thoat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_thoat"
+            android:text="Đơn hàng của tôi"
+            android:textColor="@color/color_trang"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Danh sách các đơn hàng của bạn"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/tv_donhang_trong"
+        android:layout_width="wrap_content"
+        android:layout_height="340px"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:text="Bạn chưa có đơn hàng nào"
+        android:textSize="18sp"
+       />
+
+    <ListView
+        android:id="@+id/lv_donhangcuatoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></ListView>
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</LinearLayout>

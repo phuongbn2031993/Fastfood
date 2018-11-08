@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.fragment_dangnhap">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tv_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập tài khoản"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dangnhap"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ email"
+                android:inputType="text"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_makhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/til_email"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edt_matkhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_quenmk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/til_makhau"
+            android:layout_marginTop="16dp"
+            android:text="Quên mật khẩu?"
+            android:textColor="@color/color_chu_xanh"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_dangnhap"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:text="ĐĂNG NHẬP"
+            style="@style/btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_loginfb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="Hoặc"
+            android:textColor="@color/color_chu_xanh" />
+
+        <LinearLayout
+            android:id="@+id/ll_loginfb"
+            android:layout_above="@+id/btn_signin"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:src="@drawable/ic_facebook"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:text="Continue with Facebook"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/color_trang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        </com.google.android.gms.common.SignInButton>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

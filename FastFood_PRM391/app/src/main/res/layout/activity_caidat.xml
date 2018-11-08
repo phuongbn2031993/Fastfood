@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.activity_taikhoan.activity_caidat">
+
+    <RelativeLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_toolbar"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/btn_thoat"
+            android:src="@drawable/ic_thoat"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:text="Cài đặt"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/btn_thoat"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/color_trang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <TextView
+            android:id="@+id/tv_doimk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Thay đổi mật khẩu"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_doi_diachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Thay đổi địa chỉ"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_dangxuat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Đăng xuất"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_doidiachi"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Địa chỉ mới"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_diachi_moi"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_capnhap_diachi"
+            android:layout_marginTop="16dp"
+            android:text="CẬP NHẬP"
+            style="@style/btn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_doimk"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Mật khẩu cũ"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_mk_cu"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Mật khẩu mới"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_mk_moi"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Nhập lại mật khẩu"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_xnmk_moi"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_capnhap_mk"
+            android:layout_marginTop="16dp"
+            android:text="CẬP NHẬP"
+            style="@style/btn" />
+    </LinearLayout>
+
+</LinearLayout>

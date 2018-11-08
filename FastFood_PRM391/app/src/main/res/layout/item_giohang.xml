@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_giohang"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_khoaitaychien"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/tv_tengiohang"
+            android:text="Tên sản phẩm"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/btn_delete"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_giagiohang"
+            android:layout_marginTop="3dp"
+            android:text="53450000"
+            android:textColor="@color/color_do_hong"
+            android:textSize="16sp"
+            android:layout_below="@+id/tv_tengiohang"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/tv_giagiohang"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/btn_tru"
+                android:focusable="false"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/btn_soluong"
+                android:focusable="false"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:background="@null"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="70dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/btn_cong"
+                android:focusable="false"
+                android:text="+"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

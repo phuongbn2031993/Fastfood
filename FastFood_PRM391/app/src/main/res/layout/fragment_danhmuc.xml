@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.fragment_danhmuc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_lv_danhmuc"
+            android:layout_width="80dp"
+            android:background="@color/color_xam"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_loaisp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/ll_lv_danhmuc"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_all_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edt_timkiem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:hint="Tìm kiếm trên FastFood"
+                    android:textSize="12dp"
+                    android:paddingLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_tiemkiem"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_timkiem" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_chitietloaisp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

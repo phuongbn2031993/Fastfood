@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_Primary">#3F51B5</color>
+
+    <color name="color_hong">#FF4081</color>
+
+    <color name="color_nen">#48A307</color>
+
+    <color name="color_nen1">#9dea65</color>
+
+    <color name="color_nenActivity">#e7e9e6</color>
+
+    <color name="color_trang">#ffffff</color>
+
+    <color name="color_do_hong">#ff6f00</color>
+
+    <color name="color_chu_xanh">#079cb3</color>
+
+    <color name="color_xam">#9a9b9b</color>
+</resources>
